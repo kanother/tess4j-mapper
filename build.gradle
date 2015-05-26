@@ -7,8 +7,15 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven {
+        url "http://repo.ghost4j.org/maven2/releases"
+    }
+    maven {
+        url "http://www.mygrid.org.uk/maven/repository"
+    }
 }
 
 dependencies {
+    compile group: "net.sourceforge.tess4j", name: "tess4j", version: "2.0.0"
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
